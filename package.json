@@ -1,0 +1,27 @@
+{
+  "name": "boolean",
+  "version": "0.0.0",
+  "description": "boolean converts lots of things to boolean.",
+  "contributors": [
+    {
+      "name": "Golo Roden",
+      "email": "golo.roden@thenativeweb.io"
+    },
+    {
+      "name": "Matthias Wagler",
+      "email": "matthias.wagler@thenativeweb.io"
+    }
+  ],
+  "main": "lib/boolean.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "node-assertthat": "0.2.3",
+    "tourism": "0.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thenativeweb/boolean.git"
+  },
+  "license": "MIT"
+}
