@@ -14,6 +14,28 @@ First you need to add a reference to boolean in your application.
 var boolean = require('boolean');
 ```
 
+To verify a value for its boolean value, call the `boolean` function and provide the value in question as parameter.
+
+```javascript
+console.log(boolean('true')); // => true
+```
+
+The `boolean` function considers the following values to be equivalent to `true`:
+
+- `true` (boolean)
+- `'true'` (string)
+- `'TRUE'` (string)
+- `'t'` (string)
+- `'T'` (string)
+- `'yes (string)'` (string)
+- `'YES (string)'` (string)
+- `'y'` (string)
+- `'Y'` (string)
+- `'1'` (string)
+- `1` (number)
+
+All other values, including `undefined` and `null` are considered to be `false`.
+
 ## Running the build
 
 This module can be built using [Grunt](http://gruntjs.com/). Besides running the tests, this also analyses the code. To run Grunt, go to the folder where you have installed boolean and run `grunt`. You need to have [grunt-cli](https://github.com/gruntjs/grunt-cli) installed.
