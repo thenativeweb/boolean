@@ -1,0 +1,16 @@
+machine:
+  timezone: Europe/Berlin
+
+  pre:
+    - curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
+
+  node:
+    version: 1.2.0
+
+dependencies:
+  pre:
+    - npm install -g grunt-cli
+
+test:
+  override:
+    - grunt

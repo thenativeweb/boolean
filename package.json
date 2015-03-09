@@ -15,13 +15,17 @@
   "main": "lib/boolean.js",
   "dependencies": {},
   "devDependencies": {
+    "assertthat": "0.5.3",
     "grunt": "0.4.5",
-    "node-assertthat": "0.2.3",
-    "tourism": "0.10.0"
+    "tourism": "0.14.1"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/thenativeweb/boolean.git"
   },
+  "keywords": [
+    "boolean",
+    "parser"
+  ],
   "license": "MIT"
 }

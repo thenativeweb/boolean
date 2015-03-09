@@ -2,6 +2,8 @@
 
 boolean converts lots of things to boolean.
 
+[![Circle CI](https://circleci.com/gh/thenativeweb/boolean.svg?style=svg)](https://circleci.com/gh/thenativeweb/boolean)
+
 ## Installation
 
     $ npm install boolean
