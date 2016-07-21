@@ -17,9 +17,14 @@ suite('boolean', function () {
     });
   });
 
-  suite('null', function () {
-    test('returns false.', function (done) {
+  suite('object', function () {
+    test('null returns false.', function (done) {
       assert.that(boolean(null)).is.false();
+      done();
+    });
+
+    test('{} returns false.', function (done) {
+      assert.that(boolean({})).is.false();
       done();
     });
   });
@@ -126,6 +131,21 @@ suite('boolean', function () {
       assert.that(boolean('0')).is.false();
       done();
     });
+
+    test('"contains-the-letter-t" returns false.', function (done) {
+      assert.that(boolean('contains-the-letter-t')).is.false();
+      done();
+    });
+
+    test('"contains-the-word-yes" returns false.', function (done) {
+      assert.that(boolean('noyesno')).is.false();
+      done();
+    });
+
+    test('arbitrary string returns false.', function (done) {
+      assert.that(boolean('123')).is.false();
+      done();
+    });
   });
 
   suite('number', function () {
@@ -136,6 +156,11 @@ suite('boolean', function () {
 
     test('0 returns false.', function (done) {
       assert.that(boolean(0)).is.false();
+      done();
+    });
+
+    test('123 returns false.', function (done) {
+      assert.that(boolean(123)).is.false();
       done();
     });
   });
