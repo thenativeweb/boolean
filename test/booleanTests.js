@@ -146,6 +146,11 @@ suite('boolean', function () {
       assert.that(boolean('123')).is.false();
       done();
     });
+
+    test('trims whitespace.', function (done) {
+      assert.that(boolean(' true  ')).is.true();
+      done();
+    });
   });
 
   suite('number', function () {

@@ -4,14 +4,16 @@ boolean converts lots of things to boolean.
 
 ## Installation
 
-    $ npm install boolean
+```bash
+$ npm install boolean
+```
 
 ## Quick start
 
 First you need to add a reference to boolean in your application.
 
 ```javascript
-var boolean = require('boolean');
+const boolean = require('boolean');
 ```
 
 To verify a value for its boolean value, call the `boolean` function and provide the value in question as parameter.
@@ -33,6 +35,8 @@ The `boolean` function considers the following values to be equivalent to `true`
 - `'Y'` (string)
 - `'1'` (string)
 - `1` (number)
+
+*Please note that if you provide a string, it will be trimmed.*
 
 All other values, including `undefined` and `null` are considered to be `false`.
 
