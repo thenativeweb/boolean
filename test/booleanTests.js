@@ -1,170 +1,170 @@
 'use strict';
 
-var assert = require('assertthat');
+const assert = require('assertthat');
 
-var boolean = require('../lib/boolean');
+const boolean = require('../lib/boolean');
 
-suite('boolean', function () {
-  test('is a function.', function (done) {
+suite('boolean', () => {
+  test('is a function.', done => {
     assert.that(boolean).is.ofType('function');
     done();
   });
 
-  suite('undefined', function () {
-    test('returns false.', function (done) {
+  suite('undefined', () => {
+    test('returns false.', done => {
       assert.that(boolean(undefined)).is.false();
       done();
     });
   });
 
-  suite('object', function () {
-    test('null returns false.', function (done) {
+  suite('object', () => {
+    test('null returns false.', done => {
       assert.that(boolean(null)).is.false();
       done();
     });
 
-    test('{} returns false.', function (done) {
+    test('{} returns false.', done => {
       assert.that(boolean({})).is.false();
       done();
     });
   });
 
-  suite('boolean', function () {
-    test('true returns true.', function (done) {
+  suite('boolean', () => {
+    test('true returns true.', done => {
       assert.that(boolean(true)).is.true();
       done();
     });
 
-    test('false returns false.', function (done) {
+    test('false returns false.', done => {
       assert.that(boolean(false)).is.false();
       done();
     });
   });
 
-  suite('string', function () {
-    test('"true" returns true.', function (done) {
+  suite('string', () => {
+    test('"true" returns true.', done => {
       assert.that(boolean('true')).is.true();
       done();
     });
 
-    test('"false" returns false.', function (done) {
+    test('"false" returns false.', done => {
       assert.that(boolean('false')).is.false();
       done();
     });
 
-    test('"TRUE" returns true.', function (done) {
+    test('"TRUE" returns true.', done => {
       assert.that(boolean('TRUE')).is.true();
       done();
     });
 
-    test('"FALSE" returns false.', function (done) {
+    test('"FALSE" returns false.', done => {
       assert.that(boolean('FALSE')).is.false();
       done();
     });
 
-    test('"t" returns true.', function (done) {
+    test('"t" returns true.', done => {
       assert.that(boolean('t')).is.true();
       done();
     });
 
-    test('"f" returns false.', function (done) {
+    test('"f" returns false.', done => {
       assert.that(boolean('f')).is.false();
       done();
     });
 
-    test('"T" returns true.', function (done) {
+    test('"T" returns true.', done => {
       assert.that(boolean('T')).is.true();
       done();
     });
 
-    test('"F" returns false.', function (done) {
+    test('"F" returns false.', done => {
       assert.that(boolean('F')).is.false();
       done();
     });
 
-    test('"yes" returns true.', function (done) {
+    test('"yes" returns true.', done => {
       assert.that(boolean('yes')).is.true();
       done();
     });
 
-    test('"no" returns false.', function (done) {
+    test('"no" returns false.', done => {
       assert.that(boolean('no')).is.false();
       done();
     });
 
-    test('"YES" returns true.', function (done) {
+    test('"YES" returns true.', done => {
       assert.that(boolean('YES')).is.true();
       done();
     });
 
-    test('"NO" returns false.', function (done) {
+    test('"NO" returns false.', done => {
       assert.that(boolean('NO')).is.false();
       done();
     });
 
-    test('"y" returns true.', function (done) {
+    test('"y" returns true.', done => {
       assert.that(boolean('y')).is.true();
       done();
     });
 
-    test('"n" returns false.', function (done) {
+    test('"n" returns false.', done => {
       assert.that(boolean('n')).is.false();
       done();
     });
 
-    test('"Y" returns true.', function (done) {
+    test('"Y" returns true.', done => {
       assert.that(boolean('Y')).is.true();
       done();
     });
 
-    test('"N" returns false.', function (done) {
+    test('"N" returns false.', done => {
       assert.that(boolean('N')).is.false();
       done();
     });
 
-    test('"1" returns true.', function (done) {
+    test('"1" returns true.', done => {
       assert.that(boolean('1')).is.true();
       done();
     });
 
-    test('"0" returns false.', function (done) {
+    test('"0" returns false.', done => {
       assert.that(boolean('0')).is.false();
       done();
     });
 
-    test('"contains-the-letter-t" returns false.', function (done) {
+    test('"contains-the-letter-t" returns false.', done => {
       assert.that(boolean('contains-the-letter-t')).is.false();
       done();
     });
 
-    test('"contains-the-word-yes" returns false.', function (done) {
+    test('"contains-the-word-yes" returns false.', done => {
       assert.that(boolean('noyesno')).is.false();
       done();
     });
 
-    test('arbitrary string returns false.', function (done) {
+    test('arbitrary string returns false.', done => {
       assert.that(boolean('123')).is.false();
       done();
     });
 
-    test('trims whitespace.', function (done) {
+    test('trims whitespace.', done => {
       assert.that(boolean(' true  ')).is.true();
       done();
     });
   });
 
-  suite('number', function () {
-    test('1 returns true.', function (done) {
+  suite('number', () => {
+    test('1 returns true.', done => {
       assert.that(boolean(1)).is.true();
       done();
     });
 
-    test('0 returns false.', function (done) {
+    test('0 returns false.', done => {
       assert.that(boolean(0)).is.false();
       done();
     });
 
-    test('123 returns true.', function (done) {
+    test('123 returns true.', done => {
       assert.that(boolean(123)).is.true();
       done();
     });

@@ -12,12 +12,12 @@
       "email": "matthias.wagler@thenativeweb.io"
     }
   ],
-  "main": "lib/boolean.js",
+  "main": "dist/boolean.js",
   "dependencies": {},
   "devDependencies": {
-    "assertthat": "0.5.3",
-    "grunt": "0.4.5",
-    "tourism": "0.14.1"
+    "assertthat": "0.9.0",
+    "roboter": "0.15.3",
+    "roboter-server": "0.15.3"
   },
   "repository": {
     "type": "git",
