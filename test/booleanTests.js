@@ -164,8 +164,8 @@ suite('boolean', function () {
       done();
     });
 
-    test('123 returns false.', function (done) {
-      assert.that(boolean(123)).is.false();
+    test('123 returns true.', function (done) {
+      assert.that(boolean(123)).is.true();
       done();
     });
   });
