@@ -10,6 +10,10 @@
     {
       "name": "Matthias Wagler",
       "email": "matthias.wagler@thenativeweb.io"
+    },
+    {
+      "name": "Ryan Smith",
+      "email": "ryan.smith@ht2labs.com"
     }
   ],
   "main": "dist/boolean.js",
