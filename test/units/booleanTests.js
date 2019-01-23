@@ -2,7 +2,7 @@
 
 const assert = require('assertthat');
 
-const boolean = require('../lib/boolean');
+const boolean = require('../../src/boolean');
 
 suite('boolean', () => {
   test('is a function.', done => {
