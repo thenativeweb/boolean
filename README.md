@@ -24,21 +24,21 @@ console.log(boolean('true')); // => true
 
 The `boolean` function considers the following values to be equivalent to `true`:
 
-- `true` (boolean)
-- `'true'` (string)
-- `'TRUE'` (string)
-- `'t'` (string)
-- `'T'` (string)
-- `'yes'` (string)
-- `'YES'` (string)
-- `'y'` (string)
-- `'Y'` (string)
-- `'on'` (string)
-- `'ON'` (string)
-- `'1'` (string)
-- `1` (number)
+-   `true` (boolean)
+-   `'true'` (string)
+-   `'TRUE'` (string)
+-   `'t'` (string)
+-   `'T'` (string)
+-   `'yes'` (string)
+-   `'YES'` (string)
+-   `'y'` (string)
+-   `'Y'` (string)
+-   `'on'` (string)
+-   `'ON'` (string)
+-   `'1'` (string)
+-   `1` (number)
 
-*Please note that if you provide a string, it will be trimmed.*
+_Please note that if you provide a string, it will be trimmed._
 
 All other values, including `undefined` and `null` are considered to be `false`.
 
