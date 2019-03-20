@@ -122,6 +122,16 @@ suite('boolean', () => {
       done();
     });
 
+    test('"on" returns true.', done => {
+      assert.that(boolean('on')).is.true();
+      done();
+    });
+
+    test('"ON" returns true.', done => {
+      assert.that(boolean('ON')).is.true();
+      done();
+    });
+
     test('"1" returns true.', done => {
       assert.that(boolean('1')).is.true();
       done();
@@ -164,8 +174,8 @@ suite('boolean', () => {
       done();
     });
 
-    test('123 returns true.', done => {
-      assert.that(boolean(123)).is.true();
+    test('123 returns false.', done => {
+      assert.that(boolean(123)).is.false();
       done();
     });
   });

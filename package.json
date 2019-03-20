@@ -19,8 +19,8 @@
   "main": "dist/boolean.js",
   "dependencies": {},
   "devDependencies": {
-    "assertthat": "2.0.1",
-    "roboter": "3.0.4"
+    "assertthat": "2.0.3",
+    "roboter": "4.0.2"
   },
   "repository": {
     "type": "git",

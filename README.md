@@ -33,6 +33,8 @@ The `boolean` function considers the following values to be equivalent to `true`
 - `'YES'` (string)
 - `'y'` (string)
 - `'Y'` (string)
+- `'on'` (string)
+- `'ON'` (string)
 - `'1'` (string)
 - `1` (number)
 
@@ -45,13 +47,13 @@ All other values, including `undefined` and `null` are considered to be `false`.
 To build this module use [roboter](https://www.npmjs.com/package/roboter).
 
 ```shell
-$ bot
+$ npx roboter
 ```
 
 ## License
 
 The MIT License (MIT)
-Copyright (c) 2014-2018 the native web.
+Copyright (c) 2014-2019 the native web.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

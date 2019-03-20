@@ -2,11 +2,11 @@
 
 const boolean = function (value) {
   if (typeof value === 'string') {
-    return /^(true|t|yes|y|1)$/i.test(value.trim());
+    return /^(true|t|yes|y|on|1)$/i.test(value.trim());
   }
 
   if (typeof value === 'number') {
-    return value !== 0;
+    return value === 1;
   }
 
   if (typeof value === 'boolean') {
