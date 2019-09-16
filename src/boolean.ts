@@ -1,8 +1,6 @@
-'use strict';
-
-var boolean = function boolean(value) {
+const boolean = function (value: any): boolean {
   if (typeof value === 'string') {
-    return /^(true|t|yes|y|on|1)$/i.test(value.trim());
+    return /^(?<truthy>true|t|yes|y|on|1)$/iu.test(value.trim());
   }
 
   if (typeof value === 'number') {
@@ -16,4 +14,4 @@ var boolean = function boolean(value) {
   return false;
 };
 
-module.exports = boolean;
+export default boolean;

@@ -16,11 +16,12 @@
       "email": "ryan.smith@ht2labs.com"
     }
   ],
-  "main": "dist/boolean.js",
+  "main": "build/lib/boolean.js",
+  "types": "build/lib/boolean.d.ts",
   "dependencies": {},
   "devDependencies": {
-    "assertthat": "2.0.3",
-    "roboter": "4.0.2"
+    "assertthat": "4.0.2",
+    "roboter": "7.3.1"
   },
   "repository": {
     "type": "git",
