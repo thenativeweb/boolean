@@ -54,7 +54,7 @@ The `boolean` function considers the following values to be equivalent to `true`
 -   `'1'` (string)
 -   `1` (number)
 
-*Please note that if you provide a string, it will be trimmed.*
+_Please note that if you provide a string, it will be trimmed._
 
 All other values, including `undefined` and `null` are considered to be `false`.
 
