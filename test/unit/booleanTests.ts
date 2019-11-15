@@ -1,5 +1,5 @@
-import assert from 'assertthat';
-import boolean from '../../lib/boolean';
+import { assert } from 'assertthat';
+import { boolean } from '../../lib/boolean';
 
 suite('boolean', (): void => {
   test('is a function.', async (): Promise<void> => {
