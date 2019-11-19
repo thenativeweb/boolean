@@ -21,7 +21,7 @@
   "dependencies": {},
   "devDependencies": {
     "assertthat": "5.0.2",
-    "roboter": "9.2.2"
+    "roboter": "9.2.3"
   },
   "repository": {
     "type": "git",
