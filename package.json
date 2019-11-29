@@ -20,7 +20,7 @@
   "types": "build/lib/boolean.d.ts",
   "dependencies": {},
   "devDependencies": {
-    "assertthat": "5.0.2",
+    "assertthat": "5.1.0",
     "roboter": "9.2.6"
   },
   "repository": {
