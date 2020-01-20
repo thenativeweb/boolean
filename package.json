@@ -21,7 +21,7 @@
   "dependencies": {},
   "devDependencies": {
     "assertthat": "5.1.0",
-    "roboter": "10.1.24",
+    "roboter": "11.0.0",
     "semantic-release-configuration": "1.0.10"
   },
   "repository": {
