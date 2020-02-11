@@ -14,6 +14,10 @@
     {
       "name": "Ryan Smith",
       "email": "ryan.smith@ht2labs.com"
+    },
+    {
+      "name": "Thomas Schaaf",
+      "email": "schaaf@komola.de"
     }
   ],
   "main": "build/lib/boolean.js",
