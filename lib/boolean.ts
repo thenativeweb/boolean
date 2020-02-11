@@ -1,6 +1,6 @@
 const boolean = function (value: any): boolean {
   if (typeof value === 'string') {
-    return ['true', '1', 'on', 'yes'].includes(value.trim());
+    return [ 'true', '1', 'on', 'yes' ].includes(value.trim());
   }
 
   if (typeof value === 'number') {
