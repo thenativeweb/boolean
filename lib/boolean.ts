@@ -12,12 +12,12 @@ const boolean = function (value: any): boolean {
     // https://kangax.github.io/compat-table/es2016plus/#test-RegExp_named_capture_groups
 
     // The original line, which is failing in Firefox:
-    // return /^(?<truthy>true|t|yes|y|on|1)$/iu.test(value.trim());
+    // return /^(?<truthy>true|t|yes|y|on|1)$/i.test(value.trim());
 
     // The replacement line, which should be removed at some point in the
     // future, including the ESLint comments:
     /* eslint-disable prefer-named-capture-group */
-    return /^(true|t|yes|y|on|1)$/iu.test(value.trim());
+    return /^(true|t|yes|y|on|1)$/i.test(value.trim());
     /* eslint-enable prefer-named-capture-group */
   }
 
