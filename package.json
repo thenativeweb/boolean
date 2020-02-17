@@ -26,7 +26,7 @@
   "devDependencies": {
     "assertthat": "5.1.0",
     "roboter": "11.0.20",
-    "semantic-release-configuration": "1.0.17"
+    "semantic-release-configuration": "1.0.18"
   },
   "repository": {
     "type": "git",
