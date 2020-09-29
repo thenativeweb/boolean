@@ -8,6 +8,7 @@ suite('boolean', (): void => {
 
   suite('undefined', (): void => {
     test('returns false.', async (): Promise<void> => {
+      // eslint-disable-next-line unicorn/no-useless-undefined
       assert.that(boolean(undefined)).is.false();
     });
   });
