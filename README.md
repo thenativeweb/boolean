@@ -58,7 +58,7 @@ _Please note that if you provide a string, it will be trimmed._
 
 All other values, including `undefined` and `null` are considered to be `false`.
 
-## Running the build
+## Running the quality assurance
 
 To build this module use [roboter](https://www.npmjs.com/package/roboter).
 
