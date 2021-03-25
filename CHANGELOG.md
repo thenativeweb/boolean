@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/thenativeweb/boolean/compare/3.0.2...3.0.3) (2021-03-25)
+
+
+### Bug Fixes
+
+* Migrate from master to main. ([#273](https://github.com/thenativeweb/boolean/issues/273)) ([18b640a](https://github.com/thenativeweb/boolean/commit/18b640af858d26b4dd76b9de443a4039e1e2131a))
+
 ## [3.0.2](https://github.com/thenativeweb/boolean/compare/3.0.1...3.0.2) (2020-11-03)
 
 
