@@ -24,7 +24,7 @@
   "types": "build/lib/boolean.d.ts",
   "dependencies": {},
   "devDependencies": {
-    "assertthat": "5.2.8",
+    "assertthat": "6.0.0",
     "roboter": "11.6.40",
     "semantic-release-configuration": "2.0.0"
   },
