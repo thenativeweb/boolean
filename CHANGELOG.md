@@ -1,3 +1,10 @@
+## [3.0.4](https://github.com/thenativeweb/boolean/compare/3.0.3...3.0.4) (2021-05-10)
+
+
+### Bug Fixes
+
+* bump hosted-git-info from 2.8.8 to 2.8.9 ([#289](https://github.com/thenativeweb/boolean/issues/289)) ([69ead2c](https://github.com/thenativeweb/boolean/commit/69ead2c8fe897d546f8329ed262e6158938581be))
+
 ## [3.0.3](https://github.com/thenativeweb/boolean/compare/3.0.2...3.0.3) (2021-03-25)
 
 
