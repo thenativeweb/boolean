@@ -18,6 +18,10 @@
     {
       "name": "Thomas Schaaf",
       "email": "schaaf@komola.de"
+    },
+    {
+      "name": "Sebastian Mares",
+      "email": "camil.sebastian@mares.email"
     }
   ],
   "main": "build/lib/boolean.js",
