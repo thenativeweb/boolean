@@ -54,7 +54,9 @@ The `boolean` function considers the following values to be equivalent to `true`
 -   `'1'` (string)
 -   `1` (number)
 
-_Please note that if you provide a string, it will be trimmed._
+In addition to the primitive types mentioned above, boolean also supports their object wrappers `Boolean`, `String`, and `Number`.
+
+_Please note that if you provide a `string` or `String` object, it will be trimmed._
 
 All other values, including `undefined` and `null` are considered to be `false`.
 

@@ -1,17 +1,17 @@
 const boolean = function (value: any): boolean {
-  if (typeof value === 'string') {
-    return [ 'true', 't', 'yes', 'y', 'on', '1' ].includes(value.trim().toLowerCase());
-  }
+  switch (Object.prototype.toString.call(value)) {
+    case '[object String]':
+      return [ 'true', 't', 'yes', 'y', 'on', '1' ].includes(value.trim().toLowerCase());
 
-  if (typeof value === 'number') {
-    return value === 1;
-  }
+    case '[object Number]':
+      return value.valueOf() === 1;
 
-  if (typeof value === 'boolean') {
-    return value;
-  }
+    case '[object Boolean]':
+      return value.valueOf();
 
-  return false;
+    default:
+      return false;
+  }
 };
 
 export { boolean };
