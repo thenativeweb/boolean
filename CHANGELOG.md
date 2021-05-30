@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/thenativeweb/boolean/compare/3.0.4...3.1.0) (2021-05-30)
+
+
+### Features
+
+* Add support for primitive object wrappers (fixes [#295](https://github.com/thenativeweb/boolean/issues/295)) ([#296](https://github.com/thenativeweb/boolean/issues/296)) ([5ae115f](https://github.com/thenativeweb/boolean/commit/5ae115f09f123cdb624452fc163fc8724e0ab926))
+
 ## [3.0.4](https://github.com/thenativeweb/boolean/compare/3.0.3...3.0.4) (2021-05-10)
 
 
