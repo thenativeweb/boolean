@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/thenativeweb/boolean/compare/3.1.0...3.1.1) (2021-06-10)
+
+
+### Bug Fixes
+
+* bump glob-parent from 5.1.1 to 5.1.2 ([#303](https://github.com/thenativeweb/boolean/issues/303)) ([8265437](https://github.com/thenativeweb/boolean/commit/8265437b1b3215256f8649e10ac65d4036a38bad))
+
 # [3.1.0](https://github.com/thenativeweb/boolean/compare/3.0.4...3.1.0) (2021-05-30)
 
 
