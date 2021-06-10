@@ -1,3 +1,10 @@
+## [3.1.2](https://github.com/thenativeweb/boolean/compare/3.1.1...3.1.2) (2021-06-10)
+
+
+### Bug Fixes
+
+* bump trim-newlines from 3.0.0 to 3.0.1 ([#302](https://github.com/thenativeweb/boolean/issues/302)) ([376489f](https://github.com/thenativeweb/boolean/commit/376489fe37ec9c46aafb44d3c9abf0edeabc6f93))
+
 ## [3.1.1](https://github.com/thenativeweb/boolean/compare/3.1.0...3.1.1) (2021-06-10)
 
 
