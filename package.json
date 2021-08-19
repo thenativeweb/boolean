@@ -27,13 +27,10 @@
   "private": false,
   "main": "build/lib/boolean.js",
   "types": "build/lib/boolean.d.ts",
-  "engines": {
-    "node": ">= 16.7.0"
-  },
   "dependencies": {},
   "devDependencies": {
     "assertthat": "6.3.11",
-    "roboter": "12.1.1",
+    "roboter": "11.7.8",
     "semantic-release-configuration": "2.0.5"
   },
   "scripts": {},
