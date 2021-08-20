@@ -1,3 +1,18 @@
+## [3.1.4](https://github.com/thenativeweb/boolean/compare/3.1.3...3.1.4) (2021-08-19)
+
+
+### Bug Fixes
+
+* Downgrade workflows to Node 14. ([#319](https://github.com/thenativeweb/boolean/issues/319)) ([072b068](https://github.com/thenativeweb/boolean/commit/072b0685f8de7602f6be9da9b80cda08cdd71778))
+* Rollback versions and remove engines field. ([#318](https://github.com/thenativeweb/boolean/issues/318)) ([145dfcf](https://github.com/thenativeweb/boolean/commit/145dfcf7f4c5e3f5898e43661b9a017a2d8cb6a9))
+
+## [3.1.3](https://github.com/thenativeweb/boolean/compare/3.1.2...3.1.3) (2021-08-19)
+
+
+### Bug Fixes
+
+* bump path-parse from 1.0.6 to 1.0.7 ([#316](https://github.com/thenativeweb/boolean/issues/316)) ([0817f9d](https://github.com/thenativeweb/boolean/commit/0817f9d5c7e4691558e7562146afac19258a655c))
+
 ## [3.1.2](https://github.com/thenativeweb/boolean/compare/3.1.1...3.1.2) (2021-06-10)
 
 
