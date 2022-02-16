@@ -19,7 +19,7 @@ suite('isBooleanable', (): void => {
     });
   });
 
-  suite('isBooleanable', (): void => {
+  suite('boolean', (): void => {
     test('true returns true.', async (): Promise<void> => {
       assert.that(isBooleanable(true)).is.true();
     });
