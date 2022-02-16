@@ -62,7 +62,7 @@ All other values, including `undefined` and `null` are considered to be `false`.
 
 ### Figuring out whether a value can be considered to be boolean
 
-From time to time, you may not want to directly convert a value to its boolean equivalent, but explicitly check whether it looks like a boolean. E.g., although `boolean('F')` return `false`, the string `F` at least looks like a boolean, in contrast to something such as `123` (for which `boolean(123)` would also return `false`).
+From time to time, you may not want to directly convert a value to its boolean equivalent, but explicitly check whether it looks like a boolean. E.g., although `boolean('F')` returns `false`, the string `F` at least looks like a boolean, in contrast to something such as `123` (for which `boolean(123)` would also return `false`).
 
 To figure out whether a value can be considered to be a boolean, use the `isBooleanable` function:
 
