@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/thenativeweb/boolean/compare/3.1.4...3.2.0) (2022-02-16)
+
+
+### Features
+
+* Introduce isBooleanable function. ([#341](https://github.com/thenativeweb/boolean/issues/341)) ([e2ecfb3](https://github.com/thenativeweb/boolean/commit/e2ecfb357db729990e533dfd498211cea6126a17))
+
 ## [3.1.4](https://github.com/thenativeweb/boolean/compare/3.1.3...3.1.4) (2021-08-19)
 
 
