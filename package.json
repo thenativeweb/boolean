@@ -25,8 +25,8 @@
     }
   ],
   "private": false,
-  "main": "build/lib/boolean.js",
-  "types": "build/lib/boolean.d.ts",
+  "main": "build/lib/index.js",
+  "types": "build/lib/index.d.ts",
   "dependencies": {},
   "devDependencies": {
     "assertthat": "6.4.0",

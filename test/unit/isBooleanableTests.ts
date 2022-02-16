@@ -1,288 +1,288 @@
 import { assert } from 'assertthat';
-import { boolean } from '../../lib/boolean';
+import { isBooleanable } from '../../lib/isBooleanable';
 
-suite('boolean', (): void => {
+suite('isBooleanable', (): void => {
   suite('undefined', (): void => {
     test('returns false.', async (): Promise<void> => {
       // eslint-disable-next-line unicorn/no-useless-undefined
-      assert.that(boolean(undefined)).is.false();
+      assert.that(isBooleanable(undefined)).is.false();
     });
   });
 
   suite('object', (): void => {
     test('null returns false.', async (): Promise<void> => {
-      assert.that(boolean(null)).is.false();
+      assert.that(isBooleanable(null)).is.false();
     });
 
     test('{} returns false.', async (): Promise<void> => {
-      assert.that(boolean({})).is.false();
+      assert.that(isBooleanable({})).is.false();
     });
   });
 
   suite('boolean', (): void => {
     test('true returns true.', async (): Promise<void> => {
-      assert.that(boolean(true)).is.true();
+      assert.that(isBooleanable(true)).is.true();
     });
 
-    test('false returns false.', async (): Promise<void> => {
-      assert.that(boolean(false)).is.false();
+    test('false returns true.', async (): Promise<void> => {
+      assert.that(isBooleanable(false)).is.true();
     });
 
-    test('Boolean(true) returns true.', async (): Promise<void> => {
+    test('isBooleanable(true) returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new Boolean(true))).is.true();
+      assert.that(isBooleanable(new Boolean(true))).is.true();
     });
 
-    test('Boolean(false) returns false.', async (): Promise<void> => {
+    test('isBooleanable(false) returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new Boolean(false))).is.false();
+      assert.that(isBooleanable(new Boolean(false))).is.true();
     });
   });
 
   suite('string', (): void => {
     test('"true" returns true.', async (): Promise<void> => {
-      assert.that(boolean('true')).is.true();
+      assert.that(isBooleanable('true')).is.true();
     });
 
-    test('"false" returns false.', async (): Promise<void> => {
-      assert.that(boolean('false')).is.false();
+    test('"false" returns true.', async (): Promise<void> => {
+      assert.that(isBooleanable('false')).is.true();
     });
 
     test('"TRUE" returns true.', async (): Promise<void> => {
-      assert.that(boolean('TRUE')).is.true();
+      assert.that(isBooleanable('TRUE')).is.true();
     });
 
-    test('"FALSE" returns false.', async (): Promise<void> => {
-      assert.that(boolean('FALSE')).is.false();
+    test('"FALSE" returns true.', async (): Promise<void> => {
+      assert.that(isBooleanable('FALSE')).is.true();
     });
 
     test('"t" returns true.', async (): Promise<void> => {
-      assert.that(boolean('t')).is.true();
+      assert.that(isBooleanable('t')).is.true();
     });
 
-    test('"f" returns false.', async (): Promise<void> => {
-      assert.that(boolean('f')).is.false();
+    test('"f" returns true.', async (): Promise<void> => {
+      assert.that(isBooleanable('f')).is.true();
     });
 
     test('"T" returns true.', async (): Promise<void> => {
-      assert.that(boolean('T')).is.true();
+      assert.that(isBooleanable('T')).is.true();
     });
 
-    test('"F" returns false.', async (): Promise<void> => {
-      assert.that(boolean('F')).is.false();
+    test('"F" returns true.', async (): Promise<void> => {
+      assert.that(isBooleanable('F')).is.true();
     });
 
     test('"yes" returns true.', async (): Promise<void> => {
-      assert.that(boolean('yes')).is.true();
+      assert.that(isBooleanable('yes')).is.true();
     });
 
-    test('"no" returns false.', async (): Promise<void> => {
-      assert.that(boolean('no')).is.false();
+    test('"no" returns true.', async (): Promise<void> => {
+      assert.that(isBooleanable('no')).is.true();
     });
 
     test('"YES" returns true.', async (): Promise<void> => {
-      assert.that(boolean('YES')).is.true();
+      assert.that(isBooleanable('YES')).is.true();
     });
 
-    test('"NO" returns false.', async (): Promise<void> => {
-      assert.that(boolean('NO')).is.false();
+    test('"NO" returns true.', async (): Promise<void> => {
+      assert.that(isBooleanable('NO')).is.true();
     });
 
     test('"y" returns true.', async (): Promise<void> => {
-      assert.that(boolean('y')).is.true();
+      assert.that(isBooleanable('y')).is.true();
     });
 
-    test('"n" returns false.', async (): Promise<void> => {
-      assert.that(boolean('n')).is.false();
+    test('"n" returns true.', async (): Promise<void> => {
+      assert.that(isBooleanable('n')).is.true();
     });
 
     test('"Y" returns true.', async (): Promise<void> => {
-      assert.that(boolean('Y')).is.true();
+      assert.that(isBooleanable('Y')).is.true();
     });
 
-    test('"N" returns false.', async (): Promise<void> => {
-      assert.that(boolean('N')).is.false();
+    test('"N" returns true.', async (): Promise<void> => {
+      assert.that(isBooleanable('N')).is.true();
     });
 
     test('"on" returns true.', async (): Promise<void> => {
-      assert.that(boolean('on')).is.true();
+      assert.that(isBooleanable('on')).is.true();
     });
 
     test('"ON" returns true.', async (): Promise<void> => {
-      assert.that(boolean('ON')).is.true();
+      assert.that(isBooleanable('ON')).is.true();
     });
 
     test('"1" returns true.', async (): Promise<void> => {
-      assert.that(boolean('1')).is.true();
+      assert.that(isBooleanable('1')).is.true();
     });
 
-    test('"0" returns false.', async (): Promise<void> => {
-      assert.that(boolean('0')).is.false();
+    test('"0" returns true.', async (): Promise<void> => {
+      assert.that(isBooleanable('0')).is.true();
     });
 
     test('"contains-the-letter-t" returns false.', async (): Promise<void> => {
-      assert.that(boolean('contains-the-letter-t')).is.false();
+      assert.that(isBooleanable('contains-the-letter-t')).is.false();
     });
 
     test('"contains-the-word-yes" returns false.', async (): Promise<void> => {
-      assert.that(boolean('noyesno')).is.false();
+      assert.that(isBooleanable('noyesno')).is.false();
     });
 
     test('arbitrary string returns false.', async (): Promise<void> => {
-      assert.that(boolean('123')).is.false();
+      assert.that(isBooleanable('123')).is.false();
     });
 
     test('trims whitespace.', async (): Promise<void> => {
-      assert.that(boolean(' true  ')).is.true();
+      assert.that(isBooleanable(' true  ')).is.true();
     });
 
     test('String("true") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('true'))).is.true();
+      assert.that(isBooleanable(new String('true'))).is.true();
     });
 
-    test('String("false") returns false.', async (): Promise<void> => {
+    test('String("false") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('false'))).is.false();
+      assert.that(isBooleanable(new String('false'))).is.true();
     });
 
     test('String("TRUE") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('TRUE'))).is.true();
+      assert.that(isBooleanable(new String('TRUE'))).is.true();
     });
 
-    test('String("FALSE") returns false.', async (): Promise<void> => {
+    test('String("FALSE") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('FALSE'))).is.false();
+      assert.that(isBooleanable(new String('FALSE'))).is.true();
     });
 
     test('String("t") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('t'))).is.true();
+      assert.that(isBooleanable(new String('t'))).is.true();
     });
 
-    test('String("f") returns false.', async (): Promise<void> => {
+    test('String("f") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('f'))).is.false();
+      assert.that(isBooleanable(new String('f'))).is.true();
     });
 
     test('String("T") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('T'))).is.true();
+      assert.that(isBooleanable(new String('T'))).is.true();
     });
 
-    test('String("F") returns false.', async (): Promise<void> => {
+    test('String("F") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('F'))).is.false();
+      assert.that(isBooleanable(new String('F'))).is.true();
     });
 
     test('String("yes") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('yes'))).is.true();
+      assert.that(isBooleanable(new String('yes'))).is.true();
     });
 
-    test('String("no") returns false.', async (): Promise<void> => {
+    test('String("no") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('no'))).is.false();
+      assert.that(isBooleanable(new String('no'))).is.true();
     });
 
     test('String("YES") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('YES'))).is.true();
+      assert.that(isBooleanable(new String('YES'))).is.true();
     });
 
-    test('String("NO") returns false.', async (): Promise<void> => {
+    test('String("NO") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('NO'))).is.false();
+      assert.that(isBooleanable(new String('NO'))).is.true();
     });
 
     test('String("y") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('y'))).is.true();
+      assert.that(isBooleanable(new String('y'))).is.true();
     });
 
-    test('String("n") returns false.', async (): Promise<void> => {
+    test('String("n") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('n'))).is.false();
+      assert.that(isBooleanable(new String('n'))).is.true();
     });
 
     test('String("Y") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('Y'))).is.true();
+      assert.that(isBooleanable(new String('Y'))).is.true();
     });
 
-    test('String("N") returns false.', async (): Promise<void> => {
+    test('String("N") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('N'))).is.false();
+      assert.that(isBooleanable(new String('N'))).is.true();
     });
 
     test('String("on") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('on'))).is.true();
+      assert.that(isBooleanable(new String('on'))).is.true();
     });
 
     test('String("ON") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('ON'))).is.true();
+      assert.that(isBooleanable(new String('ON'))).is.true();
     });
 
     test('String("1") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('1'))).is.true();
+      assert.that(isBooleanable(new String('1'))).is.true();
     });
 
-    test('String("0") returns false.', async (): Promise<void> => {
+    test('String("0") returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('0'))).is.false();
+      assert.that(isBooleanable(new String('0'))).is.true();
     });
 
     test('String("contains-the-letter-t") returns false.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('contains-the-letter-t'))).is.false();
+      assert.that(isBooleanable(new String('contains-the-letter-t'))).is.false();
     });
 
     test('String("contains-the-word-yes") returns false.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('noyesno'))).is.false();
+      assert.that(isBooleanable(new String('noyesno'))).is.false();
     });
 
     test('arbitrary string object wrapper string returns false.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String('123'))).is.false();
+      assert.that(isBooleanable(new String('123'))).is.false();
     });
 
     test('trims whitespace in string object wrapper.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new String(' true  '))).is.true();
+      assert.that(isBooleanable(new String(' true  '))).is.true();
     });
   });
 
   suite('number', (): void => {
     test('1 returns true.', async (): Promise<void> => {
-      assert.that(boolean(1)).is.true();
+      assert.that(isBooleanable(1)).is.true();
     });
 
-    test('0 returns false.', async (): Promise<void> => {
-      assert.that(boolean(0)).is.false();
+    test('0 returns true.', async (): Promise<void> => {
+      assert.that(isBooleanable(0)).is.true();
     });
 
     test('123 returns false.', async (): Promise<void> => {
-      assert.that(boolean(123)).is.false();
+      assert.that(isBooleanable(123)).is.false();
     });
 
     test('Number(1) returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new Number(1))).is.true();
+      assert.that(isBooleanable(new Number(1))).is.true();
     });
 
-    test('Number(0) returns false.', async (): Promise<void> => {
+    test('Number(0) returns true.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new Number(0))).is.false();
+      assert.that(isBooleanable(new Number(0))).is.true();
     });
 
     test('Number(123) returns false.', async (): Promise<void> => {
       // eslint-disable-next-line no-new-wrappers, unicorn/new-for-builtins
-      assert.that(boolean(new Number(123))).is.false();
+      assert.that(isBooleanable(new Number(123))).is.false();
     });
   });
 });
